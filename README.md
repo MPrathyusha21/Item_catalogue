@@ -40,9 +40,9 @@ Seperate instructions are provided to get GConnect working also.
 Or you can simply Install the dependency libraries (Flask, sqlalchemy, requests,psycopg2 and oauth2client) by running 
 `pip install -r requirements.txt`
 
-7. Setup application database `python /book-store/Data_Setup.py`
-8. *Insert sample data `python /book-store/database_init.py`
-9. Run application using `python /book-store/main.py`
+7. Setup application database `python /book-store/Setup_file.py`
+8. *Insert sample data `python /book-store/Init_file.py`
+9. Run application using `python /book-store/main_file.py`
 10. Access the application locally using http://localhost:9000
 
 *Optional step(s)
