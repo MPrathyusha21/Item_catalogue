@@ -1,4 +1,3 @@
-# Item_catalogue
 # Item Catalog Web App
 By Madisetty Prathyusha
 This web app is a project for the Udacity [FSND Course](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
@@ -16,7 +15,7 @@ The Flask application uses stored HTML templates in the tempaltes folder to buil
 3. CSS
 4. OAuth
 5. Flask Framework
-6. DataBaseModels
+6.DataBaseModels
 ## Installation
 There are some dependancies and a few instructions on how to run the application.
 Seperate instructions are provided to get GConnect working also.
@@ -29,21 +28,34 @@ Seperate instructions are provided to get GConnect working also.
 
 
 ## How to Install
-1. Install Vagrant & VirtualBox
-2. Clone the Udacity Vagrantfile
-3. Go to Vagrant directory and either clone this repo or download and place zip here
-3. Launch the Vagrant VM (`vagrant up`)
-4. Log into Vagrant VM (`vagrant ssh`)
-5. Navigate to `cd /vagrant` as instructed in terminal
-6. The app imports requests which is not on this vm. Run pip install requests
+1. Download and install Vagrant.
 
-Or you can simply Install the dependency libraries (Flask, sqlalchemy, requests,psycopg2 and oauth2client) by running 
-`pip install -r requirements.txt`
+2. Download and install VirtualBox.
 
-7. Setup application database `python /book-store/Setup_file.py`
-8. *Insert sample data `python /book-store/Init_file.py`
-9. Run application using `python /book-store/main_file.py`
-10. Access the application locally using http://localhost:9000
+3. Clone or download the Vagrant VM configuration file from here.
+
+4. Open the above directory and navigate to the vagrant/ sub-directory.
+
+5. Open terminal, and type
+
+     vagrant up
+	 
+   This will cause Vagrant to download the Ubuntu operating system and install it. This may take quite a while depending on how fast your Internet connection is.
+
+6. After the above command succeeds, connect to the newly created VM by typing the following command:
+
+     vagrant ssh
+	 
+7. Type cd /vagrant/ to navigate to the shared repository.
+8. The app imports requests which is not on this vm. Run pip install requests
+
+    Or you can simply Install the dependency libraries (Flask, sqlalchemy, requests,psycopg2 and oauth2client) by running 
+   `pip install -r requirements.txt`
+
+9.  Setup application database `python /bookhub/Setup_file.py`
+10. *Insert sample data `python /bookhub/Init_file.py`
+11. Run application using `python /bookhub/main_file.py`
+12. Access the application locally using http://localhost:9000
 
 *Optional step(s)
 
@@ -55,15 +67,15 @@ To get the Google login working there are a few additional steps:
 3. Go to Credentials
 4. Select Create Crendentials > OAuth Client ID
 5. Select Web application
-6. Enter name 'Book-Store'
+6. Enter name 'bookhub'
 7. Authorized JavaScript origins = 'http://localhost:9000'
 8. Authorized redirect URIs = 'http://localhost:9000/login' && 'http://localhost:9000/gconnect'
 9. Select Create
 10. Copy the Client ID and paste it into the `data-clientid` in login.html
 11. On the Dev Console Select Download JSON
 12. Rename JSON file to client_secrets.json
-13. Place JSON file in book-store directory that you cloned from here
-14. Run application using `python /book_store/main_file.py`
+13. Place JSON file in bookhub directory that you cloned from here
+14. Run application using `python /bookhub/main_file.py`
 
 ## JSON Endpoints
 The following are open to the public:
