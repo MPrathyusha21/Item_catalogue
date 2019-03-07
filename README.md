@@ -93,6 +93,14 @@ Book Edition JSON: `/bookhub/<path:book_name>/editions/JSON`
 
 Book Category Edition JSON: `/bookhub/<path:book_name>/<path:edition_name>/JSON`
     - Displays a specific Book category Model.
+	
+## How to use
+* You can browse through the website to find out the different categories of books.
+* You can also create you own items after you login.
+* Only the users who created the item have the ability to post, edit, and delete it.
+* You can edit an item that you created.
+* You can also delete the item that you created.
+* Once you log out. You can lost your right to change it.
 
 ## Miscellaneous
 
