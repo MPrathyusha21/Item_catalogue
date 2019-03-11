@@ -9,13 +9,19 @@ This project is a RESTful web application utilizing the Flask framework which ac
 This project has one main Python module `main_file.py` which runs the Flask application. A SQL database is created using the `Setup_file.py` module and you can populate the database with test data using `Init_file.py`.
 The Flask application uses stored HTML templates in the tempaltes folder to build the front-end of the application.
 
+* Setup_file.py
+This file completes the creation of 2 tables.One table consists of the columns category name and id.The second table consists of the columns bookname,published year,booktype,author,price and id.
+* Init_file.py
+This file consists of sample data for the tables created.When we execute this file,the sample data will be successfully inserted into tables created. 
+* main_file.py
+This files contains code of all the functions for add,edit and delete book categories and book details.
 ## Skills Required
 1. Python
 2. HTML
 3. CSS
 4. OAuth
 5. Flask Framework
-6.DataBaseModels
+6. DataBaseModels
 ## Installation
 There are some dependancies and a few instructions on how to run the application.
 Seperate instructions are provided to get GConnect working also.
@@ -49,8 +55,7 @@ Seperate instructions are provided to get GConnect working also.
 7. Type cd /vagrant/ to navigate to the shared repository.
 8. The app imports requests which is not on this vm. Run pip install requests
 
-    Or you can simply Install the dependency libraries (Flask, sqlalchemy, requests,psycopg2 and oauth2client) by running 
-   `pip install -r requirements.txt`
+    Or you can simply Install the dependency libraries (Flask, sqlalchemy, requests,psycopg2 and oauth2client)
 
 9.  Setup application database `python /bookhub/Setup_file.py`
 10. *Insert sample data `python /bookhub/Init_file.py`
@@ -83,7 +88,7 @@ The following are open to the public:
 Books Catalog JSON: `/Bookhub/JSON`
     - Displays the whole books models catalog. Book Categories and all models.
 
-Book Categories JSON: `/bookhub/bookCategories/JSON`
+Book Categories JSON: `/bookhub/bookColumns/JSON`
     - Displays all Book categories
 All Book Editions: `/bookhub/editions/JSON`
 	- Displays all Book Models
