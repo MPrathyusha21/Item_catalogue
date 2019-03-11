@@ -9,11 +9,11 @@ This project is a RESTful web application utilizing the Flask framework which ac
 This project has one main Python module `main_file.py` which runs the Flask application. A SQL database is created using the `Setup_file.py` module and you can populate the database with test data using `Init_file.py`.
 The Flask application uses stored HTML templates in the tempaltes folder to build the front-end of the application.
 
-* Setup_file.py
+## Setup_file.py
 This file completes the creation of 2 tables.One table consists of the columns category name and id.The second table consists of the columns bookname,published year,booktype,author,price and id.
-* Init_file.py
+## Init_file.py
 This file consists of sample data for the tables created.When we execute this file,the sample data will be successfully inserted into tables created. 
-* main_file.py
+## main_file.py
 This files contains code of all the functions for add,edit and delete book categories and book details.
 ## Skills Required
 1. Python
